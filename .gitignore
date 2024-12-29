@@ -9,6 +9,8 @@ _build/
 # compiled python files
 *.py[co]
 __pycache__/
+# Log files
+*.log
 # setup.py egg_info
 *.egg-info
 # emacs backup files
