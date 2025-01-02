@@ -1,0 +1,10 @@
+<odoo>
+    <menuitem id="rool_level" name="Real Estate">
+        <menuitem id="second_level" name="Estate">
+            <menuitem id="third_level" name="Properties" action="test_record" />
+        </menuitem>
+        <menuitem id="estate_setting" name="Settings">
+            <menuitem id="estate_settings_1" name="Estate types" action="property_types"/>
+        </menuitem>
+    </menuitem>
+</odoo>

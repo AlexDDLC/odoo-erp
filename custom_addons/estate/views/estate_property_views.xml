@@ -1,0 +1,51 @@
+<odoo>
+    <record id="estate_property_search_view" model="ir.ui.view">
+        <field name="name">real.estate.view.search</field>
+        <field name="model">real.estate</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <field name="estate" invisible="1"/>
+                <field name="postcode"/>
+                <filter name="filter_state_name" string="New" domain="[('estate', '=', 'new')]" />
+                <filter name="group_by_postcode" string="Postcode" context="{'group_by':'postcode'}" />
+            </search>
+        </field>
+    </record>
+
+    <!-- <record id="estate_property_form_view" model="ir.ui.view">
+        <field name="name">real.estate.view.form</field>
+        <field name="model">real.estate</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <h1>
+                            <field name="name" />
+                        </h1>
+                    </group>
+                    <group>
+                        <field name="date_availability" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record> -->
+
+    <record id="estate_property_tree_view" model="ir.ui.view">
+        <field name="name">real.estate.view.tree</field>
+        <field name="model">real.estate</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+                <field name="date_availability" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="test_record" model="ir.actions.act_window">
+        <field name="name">Properties</field>
+        <field name="res_model">real.estate</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
