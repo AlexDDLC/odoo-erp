@@ -87,3 +87,6 @@ debugpy
 watchdog
 pycountry
 simplejson
+# Extra python libraries
+simplejson
+pycountry
