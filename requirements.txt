@@ -91,3 +91,5 @@ setuptools
 pydevd-odoo
 debugpy
 watchdog
+pycountry
+simplejson
