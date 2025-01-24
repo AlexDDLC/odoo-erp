@@ -49,3 +49,6 @@ package.json
 /man/
 /share/
 /src/
+
+/logs
+/custom_addons
