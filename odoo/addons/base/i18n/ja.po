@@ -8,7 +8,7 @@
 # Wil Odoo, 2024
 # Yoshi Tashiro (Quartile) <tashiro@roomsfor.hk>, 2024
 # Ryoko Tsuda <ryoko@quartile.co>, 2024
-# Junko Augias, 2024
+# Junko Augias, 2025
 # 
 msgid ""
 msgstr ""
@@ -16,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-26 12:42+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Junko Augias, 2024\n"
+"Last-Translator: Junko Augias, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/odoo/teams/41243/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -637,6 +637,9 @@ msgid ""
 "        ZATCA E-Invoicing, support for PoS\n"
 "    "
 msgstr ""
+"\n"
+"        ZATCA 電子請求PoS用サポート\n"
+"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_ar_reports
@@ -2955,6 +2958,15 @@ msgstr ""
 "    - Regional State listings\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_tr_nilvera
+msgid ""
+"\n"
+"Base module containing core functionalities required by other Nilvera modules.\n"
+msgstr ""
+"\n"
+"他のNilveraモジュールが必要とするコア機能を含む基本モジュール。\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_bo_reports
 msgid ""
 "\n"
@@ -4416,6 +4428,8 @@ msgid ""
 "\n"
 "E-invoice implementation for the Kingdom of Saudi Arabia (PoS)\n"
 msgstr ""
+"\n"
+"サウジアラビア王国用電子請求書の実装 (PoS)\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_hr_skills_slides
@@ -4913,6 +4927,15 @@ msgid ""
 msgstr ""
 "\n"
 "消込ウィジェットからストックラインをフィルタリングします\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_tr_nilvera_einvoice
+msgid ""
+"\n"
+"For sending and receiving electronic invoices to Nilvera.\n"
+msgstr ""
+"\n"
+"Nilveraへの電子請求書の送受信\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_fr_hr_payroll
@@ -9080,6 +9103,17 @@ msgid ""
 " - Fiscal Positions\n"
 " - States\n"
 msgstr ""
+"\n"
+"Odooでバーレーンの会計科目表を管理するための基本モジュールです。\n"
+"===========================================================================\n"
+"Bahrain accounting basic charts and localization.\n"
+"\n"
+"Activates:\n"
+" - Chart of Accounts\n"
+" - Taxes\n"
+" - Tax reports\n"
+" - Fiscal Positions\n"
+" - States\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be
@@ -15733,7 +15767,7 @@ msgstr "バハマ"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_bh
 msgid "Bahrain - Accounting"
-msgstr ""
+msgstr "バーレーン - 会計"
 
 #. module: base
 #: model:res.country,name:base.bh
@@ -17522,7 +17556,7 @@ msgstr "会社詳細"
 #: model:ir.model.fields,field_description:base.field_res_partner__company_registry
 #: model:ir.model.fields,field_description:base.field_res_users__company_registry
 msgid "Company ID"
-msgstr "カンパニーID"
+msgstr "法人番号"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_company__logo
@@ -29441,7 +29475,7 @@ msgstr "多対1項目の属性削除"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_sale_picking
 msgid "On site Payment & Picking"
-msgstr "店頭で決済・ピッキング"
+msgstr "店頭で支払・受取"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_onboarding
@@ -33260,7 +33294,7 @@ msgstr "サウジアラビア - 電子請求"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_sa_edi_pos
 msgid "Saudi Arabia - E-invoicing (Simplified)"
-msgstr ""
+msgstr "サウジアラビア - 電子請求 (簡易版)"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_sa_pos
@@ -35268,7 +35302,7 @@ msgstr "タスクログ"
 #: model:ir.model.fields,field_description:base.field_res_partner__vat
 #: model:ir.model.fields,field_description:base.field_res_users__vat
 msgid "Tax ID"
-msgstr "納税者番号"
+msgstr "登録番号"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_subscription_taxcloud
@@ -36243,7 +36277,7 @@ msgstr ""
 msgid ""
 "The registry number of the company. Use it if it is different from the Tax "
 "ID. It must be unique across all partners of a same country"
-msgstr "会社の登録番号です。税IDと異なる場合は、これを使用します。同じ国のすべてのパートナー間で一意である必要があります。"
+msgstr "会社の登録番号です。登録番号と異なる場合は、これを使用します。同じ国のすべてのパートナー間で一意である必要があります。"
 
 #. module: base
 #. odoo-python
@@ -37369,6 +37403,16 @@ msgstr "トルコ - 会計"
 #: model:ir.module.module,shortdesc:base.module_l10n_tr_reports
 msgid "Türkiye - Accounting Reports"
 msgstr "トルコ - 会計レポート"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_tr_nilvera
+msgid "Türkiye - Nilvera"
+msgstr "トルコ - Nilvera"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_tr_nilvera_einvoice
+msgid "Türkiye - Nilvera E-Invoice"
+msgstr "トルコ - Nilvera 電子請求"
 
 #. module: base
 #: model:res.country,name:base.tm
@@ -40151,13 +40195,6 @@ msgstr "l10n_be_pos_sale"
 #: model:ir.model.fields.selection,name:base.selection__ir_model_fields__ttype__many2many
 msgid "many2many"
 msgstr "多対多"
-
-#. module: base
-#. odoo-python
-#: code:addons/base/models/ir_actions.py:0
-#, python-format
-msgid "many2many fields cannot be evaluated by reference"
-msgstr "多対多フィールドは参照によって評価できません。"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_model_fields__ttype__many2one

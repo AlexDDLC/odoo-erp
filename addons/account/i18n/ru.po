@@ -3707,6 +3707,13 @@ msgstr "Невозможно создать документ продажи в �
 
 #. module: account
 #. odoo-python
+#: code:addons/account/wizard/accrued_orders.py:0
+#, python-format
+msgid "Cannot create an accrual entry with orders in different currencies."
+msgstr ""
+
+#. module: account
+#. odoo-python
 #: code:addons/account/models/account_move.py:0
 #, python-format
 msgid ""
@@ -12606,7 +12613,7 @@ msgstr ""
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_journal__sale_activity_type_id
 msgid "Schedule Activity"
-msgstr "Деятельность по расписанию"
+msgstr "Запланированное действие"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_journal_search
@@ -13750,7 +13757,7 @@ msgstr "Налоговые группы"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_invoice_document
 msgid "Tax ID"
-msgstr "Tax ID"
+msgstr "ИНН"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_reconcile_model_line__force_tax_included
@@ -15133,9 +15140,7 @@ msgstr ""
 #: model:ir.model.fields,help:account.field_account_fiscal_position__foreign_vat
 msgid ""
 "The tax ID of your company in the region mapped by this fiscal position."
-msgstr ""
-"Налоговый идентификатор вашей компании в регионе, отображаемом данной "
-"фискальной позицией."
+msgstr "ИНН вашей компании в регионе, связанном с данной налоговой позицией."
 
 #. module: account
 #. odoo-python
@@ -15143,8 +15148,8 @@ msgstr ""
 #, python-format
 msgid "The tax group must have the same country_id as the tax using it."
 msgstr ""
-"Группа налогов должна иметь тот же идентификатор страны, что и используемый "
-"в ней налог."
+"Налоговая группа должна иметь тот же country_id, что и налог, который её "
+"использует."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_cash_rounding__rounding_method

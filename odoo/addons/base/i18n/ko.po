@@ -7,7 +7,7 @@
 # Martin Trigaux, 2024
 # Wil Odoo, 2024
 # Sarah Park, 2024
-# Daye Jeong, 2024
+# Daye Jeong, 2025
 # 
 msgid ""
 msgstr ""
@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-26 12:42+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Daye Jeong, 2024\n"
+"Last-Translator: Daye Jeong, 2025\n"
 "Language-Team: Korean (https://app.transifex.com/odoo/teams/41243/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -639,6 +639,9 @@ msgid ""
 "        ZATCA E-Invoicing, support for PoS\n"
 "    "
 msgstr ""
+"\n"
+"        ZATCA 전자 청구서, PoS 지원\n"
+"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_ar_reports
@@ -2959,6 +2962,15 @@ msgstr ""
 "    - Regional State listings\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_tr_nilvera
+msgid ""
+"\n"
+"Base module containing core functionalities required by other Nilvera modules.\n"
+msgstr ""
+"\n"
+"다른 Nilvera 모듈에 필요한 필수 기능을 포함하는 기본 모듈.\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_bo_reports
 msgid ""
 "\n"
@@ -4453,6 +4465,8 @@ msgid ""
 "\n"
 "E-invoice implementation for the Kingdom of Saudi Arabia (PoS)\n"
 msgstr ""
+"\n"
+"사우디아라비아의 전자 청구서 기능 구현 (PoS)\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_hr_skills_slides
@@ -4950,6 +4964,15 @@ msgid ""
 msgstr ""
 "\n"
 "조정 위젯에서 재고 내역을 필터링합니다.\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_tr_nilvera_einvoice
+msgid ""
+"\n"
+"For sending and receiving electronic invoices to Nilvera.\n"
+msgstr ""
+"\n"
+"Nilvera에 전자 청구서를 보내고 받기 위한 모듈.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_fr_hr_payroll
@@ -9144,6 +9167,17 @@ msgid ""
 " - Fiscal Positions\n"
 " - States\n"
 msgstr ""
+"\n"
+"바레인의 회계 계정과목표를 관리하기 위한 Odoo 기본 모듈입니다..\n"
+"===========================================================================\n"
+"바레인 회계 기본 계정과목표 및 현지화.\n"
+"\n"
+"Activates:\n"
+" - Chart of Accounts\n"
+" - Taxes\n"
+" - Tax reports\n"
+" - Fiscal Positions\n"
+" - States\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be
@@ -15857,7 +15891,7 @@ msgstr "바하마"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_bh
 msgid "Bahrain - Accounting"
-msgstr ""
+msgstr "바레인 - 회계"
 
 #. module: base
 #: model:res.country,name:base.bh
@@ -33550,7 +33584,7 @@ msgstr "사우디 아라비아 - 전자 청구서"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_sa_edi_pos
 msgid "Saudi Arabia - E-invoicing (Simplified)"
-msgstr ""
+msgstr "사우디아라비아 - 전자 청구서 (간이 버전)"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_sa_pos
@@ -37700,6 +37734,16 @@ msgid "Türkiye - Accounting Reports"
 msgstr "터키 - 회계 보고서"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_tr_nilvera
+msgid "Türkiye - Nilvera"
+msgstr "튀르키예 - Nilvera"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_tr_nilvera_einvoice
+msgid "Türkiye - Nilvera E-Invoice"
+msgstr "튀르키예 - Nilvera 전자 인보이스"
+
+#. module: base
 #: model:res.country,name:base.tm
 msgid "Turkmenistan"
 msgstr "투르크 메니스탄"
@@ -40486,13 +40530,6 @@ msgstr "l10n_be_pos_sale"
 #: model:ir.model.fields.selection,name:base.selection__ir_model_fields__ttype__many2many
 msgid "many2many"
 msgstr "many2many"
-
-#. module: base
-#. odoo-python
-#: code:addons/base/models/ir_actions.py:0
-#, python-format
-msgid "many2many fields cannot be evaluated by reference"
-msgstr "many2many 필드를 참조 사항으로 평가할 수 없습니다"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_model_fields__ttype__many2one

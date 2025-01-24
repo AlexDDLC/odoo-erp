@@ -23,8 +23,14 @@ class AccountEdiProxyClientUser(models.Model):
     # HELPER METHODS
     # -------------------------------------------------------------------------
 
-    @handle_demo
+
     def _make_request(self, url, params=False):
+        if self.proxy_type == 'peppol':
+            return self._make_request_peppol(url, params=params)
+        return super()._make_request(url, params=params)
+
+    @handle_demo
+    def _make_request_peppol(self, url, params=False):
         # extends account_edi_proxy_client to update peppol_proxy_state
         # of archived users
         try:
@@ -127,7 +133,6 @@ class AccountEdiProxyClientUser(models.Model):
                     enc_key = content["enc_key"]
                     document_content = content["document"]
                     filename = content["filename"] or 'attachment'  # default to attachment, which should not usually happen
-                    partner_endpoint = content["accounting_supplier_party"]
                     decoded_document = edi_user._decrypt_data(document_content, enc_key)
                     attachment_vals = {
                         'name': f'{filename}.xml',
@@ -145,11 +150,7 @@ class AccountEdiProxyClientUser(models.Model):
                                 default_peppol_message_uuid=uuid,
                             )\
                             ._create_document_from_attachment(attachment.id)
-                        if partner_endpoint:
-                            move._message_log(body=_(
-                                'Peppol document has been received successfully. Sender endpoint: %s', partner_endpoint))
-                        else:
-                            move._message_log(body=_('Peppol document has been received successfully'))
+                        move._message_log(body=_('Peppol document has been received successfully'))
                     # pylint: disable=broad-except
                     except Exception:  # noqa: BLE001
                         # if the invoice creation fails for any reason,
@@ -199,7 +200,7 @@ class AccountEdiProxyClientUser(models.Model):
                         # this rare edge case can happen if the participant is not active on the proxy side
                         # in this case we can't get information about the invoices
                         edi_user_moves.peppol_move_state = 'error'
-                        log_message = _("Peppol error: %s", content['message'])
+                        log_message = _("Peppol error: %s", content.get('display_message', content['message']))
                         edi_user_moves._message_log_batch(bodies={move.id: log_message for move in edi_user_moves})
                         break
 
@@ -211,7 +212,7 @@ class AccountEdiProxyClientUser(models.Model):
                             continue
 
                         move.peppol_move_state = 'error'
-                        move._message_log(body=_("Peppol error: %s", content['error']['message']))
+                        move._message_log(body=_("Peppol error: %s", content['error'].get('display_message', content['message'])))
                         continue
 
                     move.peppol_move_state = content['state']

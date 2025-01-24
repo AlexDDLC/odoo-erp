@@ -10,9 +10,9 @@
 # Martin Trigaux, 2024
 # Wil Odoo, 2024
 # Odoo哥 <vnsoft.he@gmail.com>, 2024
-# Jeffery CHEN <jeffery9@gmail.com>, 2024
-# Raymond Yu <cl_yu@hotmail.com>, 2024
-# Chloe Wang, 2024
+# Raymond Yu <cl_yu@hotmail.com>, 2025
+# Jeffery CHEN <jeffery9@gmail.com>, 2025
+# Chloe Wang, 2025
 # 
 msgid ""
 msgstr ""
@@ -20,7 +20,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-26 12:42+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Chloe Wang, 2024\n"
+"Last-Translator: Chloe Wang, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/odoo/teams/41243/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2971,6 +2971,15 @@ msgstr ""
 "    - 地区国家列表\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_tr_nilvera
+msgid ""
+"\n"
+"Base module containing core functionalities required by other Nilvera modules.\n"
+msgstr ""
+"\n"
+"基础模块，包含其他 Nilvera 模块所需的核心功能。\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_bo_reports
 msgid ""
 "\n"
@@ -4958,6 +4967,15 @@ msgid ""
 msgstr ""
 "\n"
 "从对账部件中过滤出库存线\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_tr_nilvera_einvoice
+msgid ""
+"\n"
+"For sending and receiving electronic invoices to Nilvera.\n"
+msgstr ""
+"\n"
+"用于向 Nilvera 发送和接收电子发票。\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_fr_hr_payroll
@@ -9148,6 +9166,17 @@ msgid ""
 " - Fiscal Positions\n"
 " - States\n"
 msgstr ""
+"\n"
+"这是管理 Odoo 中巴林会计图表的基础模块。\n"
+"===========================================================================\n"
+"巴林会计基本图表和本地化。\n"
+"\n"
+"激活：\n"
+" - 会计科目表\n"
+" - 税务\n"
+" - 税务报告\n"
+" - 财政状况\n"
+" - 国家\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be
@@ -15642,7 +15671,7 @@ msgstr "基于员工合同的自动化规则"
 #: model:ir.model.fields,field_description:base.field_ir_actions_server__available_model_ids
 #: model:ir.model.fields,field_description:base.field_ir_cron__available_model_ids
 msgid "Available Models"
-msgstr "可用机型"
+msgstr "可用模型"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.ir_filters_view_form
@@ -15827,7 +15856,7 @@ msgstr "巴哈马"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_bh
 msgid "Bahrain - Accounting"
-msgstr ""
+msgstr "巴林 - 会计"
 
 #. module: base
 #: model:res.country,name:base.bh
@@ -19408,7 +19437,7 @@ msgstr "目标联系人"
 #: model:ir.model.fields,field_description:base.field_ir_actions_act_window__res_model
 #: model:ir.model.fields,field_description:base.field_ir_actions_client__res_model
 msgid "Destination Model"
-msgstr "目的地模式"
+msgstr "目标模型"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_rule_form
@@ -32646,7 +32675,7 @@ msgstr "报告布局"
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.act_report_xml_search_view
 msgid "Report Model"
-msgstr "报告模式"
+msgstr "报告模型"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_actions_report__report_type
@@ -35442,7 +35471,7 @@ msgstr "目标"
 #: model:ir.model.fields,field_description:base.field_ir_actions_server__crud_model_name
 #: model:ir.model.fields,field_description:base.field_ir_cron__crud_model_name
 msgid "Target Model Name"
-msgstr "目标机型名称"
+msgstr "目标模型名称"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_actions_act_window__target
@@ -37571,6 +37600,16 @@ msgstr "土耳其 - 会计"
 #: model:ir.module.module,shortdesc:base.module_l10n_tr_reports
 msgid "Türkiye - Accounting Reports"
 msgstr "土耳其 - 财务报告"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_tr_nilvera
+msgid "Türkiye - Nilvera"
+msgstr "土耳其 - Nilvera"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_tr_nilvera_einvoice
+msgid "Türkiye - Nilvera E-Invoice"
+msgstr "土耳其 - Nilvera 电子发票"
 
 #. module: base
 #: model:res.country,name:base.tm
@@ -40352,13 +40391,6 @@ msgstr "l10n_be_pos_sale"
 #: model:ir.model.fields.selection,name:base.selection__ir_model_fields__ttype__many2many
 msgid "many2many"
 msgstr "many2many"
-
-#. module: base
-#. odoo-python
-#: code:addons/base/models/ir_actions.py:0
-#, python-format
-msgid "many2many fields cannot be evaluated by reference"
-msgstr "many2many 字段不能通过引用进行评估"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_model_fields__ttype__many2one

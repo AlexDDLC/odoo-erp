@@ -24,6 +24,7 @@
 # Anton Kaligin, 2024
 # Wil Odoo, 2024
 # Larissa Manderfeld, 2024
+# Ilya Rozhkov, 2024
 # 
 msgid ""
 msgstr ""
@@ -31,7 +32,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-13 10:26+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Larissa Manderfeld, 2024\n"
+"Last-Translator: Ilya Rozhkov, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/odoo/teams/41243/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1668,7 +1669,7 @@ msgstr "Изменить количество продукта"
 msgid ""
 "Changing the Lot/Serial number for move lines with different products is not"
 " allowed."
-msgstr ""
+msgstr "Нельзя менять партию или серийный номер для строк с разными товарами."
 
 #. module: stock
 #. odoo-python
@@ -3583,7 +3584,7 @@ msgstr "Генерация серийных номеров"
 #: code:addons/stock/static/src/widgets/lots_dialog.xml:0
 #, python-format
 msgid "Generate Serials/Lots"
-msgstr ""
+msgstr "Сгенерировать серийные номера/партии"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
@@ -4083,7 +4084,7 @@ msgstr "Импортные партии"
 #: code:addons/stock/static/src/widgets/lots_dialog.xml:0
 #, python-format
 msgid "Import Serials/Lots"
-msgstr ""
+msgstr "Импорт серийных номеров/партий"
 
 #. module: stock
 #. odoo-python
@@ -4909,7 +4910,7 @@ msgstr "Местоположение"
 #: code:addons/stock/models/stock_picking.py:0
 #, python-format
 msgid "Locations to update"
-msgstr ""
+msgstr " Места хранения для обновления"
 
 #. module: stock
 #: model:ir.actions.server,name:stock.action_toggle_is_locked
@@ -5551,7 +5552,7 @@ msgstr "Операции не найдены. Давайте создадим п
 #: code:addons/stock/models/stock_move.py:0
 #, python-format
 msgid "No product found to generate Serials/Lots for."
-msgstr ""
+msgstr "Не найдено товара для генерации серийных номеров/партий."
 
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.product_template_action_product
@@ -6139,7 +6140,7 @@ msgstr "Пакет A"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.report_picking
 msgid "Package B"
-msgstr ""
+msgstr "Упаковка B"
 
 #. module: stock
 #: model:ir.actions.report,name:stock.action_report_quant_package_barcode_small
@@ -6194,7 +6195,7 @@ msgstr "Идентификаторы уровня пакета Подробне�
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.quant_package_search_view
 msgid "Package Name"
-msgstr "Название пакета"
+msgstr "Название упаковки"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_quant_package__name
@@ -6227,29 +6228,29 @@ msgstr "Тип упаковки Демо"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.report_package_barcode_small
 msgid "Package Type:"
-msgstr "Тип тарифа:"
+msgstr "Тип упаковки:"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_package_type_view
 #: model:ir.ui.menu,name:stock.menu_packaging_types
 #: model_terms:ir.ui.view,arch_db:stock.stock_package_type_tree
 msgid "Package Types"
-msgstr "Типы пакетов"
+msgstr "Типы упаковок"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_quant_package__package_use
 msgid "Package Use"
-msgstr "Использование пакета"
+msgstr "Использование упаковки"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_quant_package__valid_sscc
 msgid "Package name is valid SSCC"
-msgstr "Имя пакета является действительным SSCC"
+msgstr "Название упаковки является действительным SSCC"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.stock_putaway_list
 msgid "Package type"
-msgstr "Тип пакета"
+msgstr "Тип упаковки"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_package_view
@@ -6260,7 +6261,7 @@ msgstr "Тип пакета"
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_form
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_type_form
 msgid "Packages"
-msgstr "Пакеты"
+msgstr "Упаковки"
 
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.action_package_view
@@ -6268,8 +6269,8 @@ msgid ""
 "Packages are usually created via transfers (during pack operation) and can contain different products.\n"
 "                Once created, the whole package can be moved at once, or products can be unpacked and moved as single units again."
 msgstr ""
-"Пакеты обычно создаются путем перемещения (во время операции упаковки) и могут содержать различные продукты.\n"
-"                После создания пакет может быть перемещен сразу целиком, либо продукты могут быть распакованы и снова перемещены как отдельные единицы."
+"Упаковки обычно создаются при перемещениях и могут содержать разные товары. \n"
+"                  После создания упаковку можно переместить целиком или распаковать и перемещать товары по отдельности."
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move__product_packaging_id
@@ -6339,7 +6340,7 @@ msgstr "Частичный"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_quant_relocate__partial_package_names
 msgid "Partial Package Names"
-msgstr "Частичные имена пакетов"
+msgstr "Частичные названия упаковок"
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__stock_move__state__partially_available
@@ -8557,12 +8558,12 @@ msgstr "Имя источника"
 #: model_terms:ir.ui.view,arch_db:stock.stock_move_line_view_search
 #: model_terms:ir.ui.view,arch_db:stock.view_move_line_form
 msgid "Source Package"
-msgstr "Пакет \"Источник"
+msgstr "Исходная упаковка"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.message_body
 msgid "Source Package:"
-msgstr "Исходный пакет:"
+msgstr "Исходная упаковка:"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_internal_search
@@ -8668,12 +8669,12 @@ msgstr "Операции с запасами"
 #. module: stock
 #: model:ir.model,name:stock.model_stock_package_destination
 msgid "Stock Package Destination"
-msgstr "Пакет акций Назначение"
+msgstr "Место назначения упаковки"
 
 #. module: stock
 #: model:ir.model,name:stock.model_stock_package_level
 msgid "Stock Package Level"
-msgstr "Уровень пакета акций"
+msgstr "Уровень складской упаковки"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_partner__picking_warn
@@ -8767,7 +8768,7 @@ msgstr "Перемещение запасов, которые были обра�
 #. module: stock
 #: model:ir.model,name:stock.model_stock_package_type
 msgid "Stock package type"
-msgstr "Тип комплекта поставки"
+msgstr "Тип складской упаковки"
 
 #. module: stock
 #: model:ir.model,name:stock.model_report_stock_report_stock_rule
@@ -8944,7 +8945,7 @@ msgstr ""
 #: code:addons/stock/models/stock_quant.py:0
 #, python-format
 msgid "The Lot/Serial number (%s) is linked to another product."
-msgstr ""
+msgstr "Партия/серийный номер (%s) связан с другим товаром."
 
 #. module: stock
 #. odoo-python
@@ -9089,7 +9090,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_quant__package_id
 msgid "The package containing this quant"
-msgstr "Пакет, содержащий этот квант"
+msgstr "Упаковка, содержащая это количество"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_location__location_id
@@ -9125,8 +9126,8 @@ msgid ""
 "The quantities selected do not all belong to the same location.\n"
 "                    You may not assign them a package without moving them to a common location."
 msgstr ""
-"Выбранные количества не все относятся к одному местоположению.\n"
-"                    Вы не можете назначить им пакет, не переместив их в общее местоположение."
+"Выбранные количества находятся в разных местах. \n"
+"                      Переместите их в одно место для упаковки."
 
 #. module: stock
 #. odoo-python
@@ -9613,7 +9614,7 @@ msgstr "Порядок"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.stock_quant_relocate_view_form
 msgid "To Package"
-msgstr "В пакет"
+msgstr "Для упаковки"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.stock_picking_type_kanban
@@ -10409,7 +10410,7 @@ msgstr "Вес"
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_package_type__base_weight
 msgid "Weight of the package type"
-msgstr "Вес типа упаковки"
+msgstr "Вес упаковки"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_storage_category__weight_uom_name
@@ -10602,8 +10603,8 @@ msgid ""
 "You are about to move quantities in a package without moving the full package.\n"
 "                    Those quantities will be removed from the following package(s):"
 msgstr ""
-"Вы собираетесь переместить количество в пакете, не перемещая весь пакет.\n"
-"                    Эти количества будут удалены из следующего пакета(ов):"
+"Вы перемещаете товары из упаковки без перемещения всей упаковки. \n"
+"                      Эти товары будут удалены из следующих упаковок:"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_stock_quant_form
@@ -10714,7 +10715,7 @@ msgstr "Вы не можете изменить тип продукта, кот�
 #, python-format
 msgid ""
 "You can not create a snoozed orderpoint that is not manually triggered."
-msgstr ""
+msgstr "Нельзя создать отложенный пункт заказа без ручного запуска."
 
 #. module: stock
 #. odoo-python
@@ -10787,6 +10788,8 @@ msgid ""
 "You can only snooze manual orderpoints. You should rather archive 'auto-"
 "trigger' orderpoints if you do not want them to be triggered."
 msgstr ""
+"Откладывать можно только ручные пункты заказа. Автоматические лучше "
+"архивировать, если вы не хотите их запускать."
 
 #. module: stock
 #. odoo-python
@@ -10909,13 +10912,15 @@ msgid ""
 "package through this view. Try adding them to a batch picking and pack it "
 "there."
 msgstr ""
+"Нельзя упаковать товары из разных перемещений в одну упаковку. Попробуйте "
+"объединить их в одну партию и упаковать там."
 
 #. module: stock
 #. odoo-python
 #: code:addons/stock/models/stock_quant.py:0
 #, python-format
 msgid "You cannot duplicate stock quants."
-msgstr ""
+msgstr "Вы не можете дублировать складские остатки."
 
 #. module: stock
 #. odoo-python
@@ -10932,8 +10937,8 @@ msgid ""
 "You cannot move the same package content more than once in the same transfer"
 " or split the same package into two location."
 msgstr ""
-"Вы не можете перемещать одно и то же содержимое упаковки более одного раза в"
-" одном перемещении или разделять одну и ту же упаковку на два места."
+"Нельзя перемещать содержимое одной и той же упаковки более одного раза в "
+"одном перемещении или разделять одну и ту же упаковку на два места."
 
 #. module: stock
 #. odoo-python
@@ -11358,7 +11363,7 @@ msgstr "является"
 #. module: stock
 #: model:product.removal,method:stock.removal_least_packages
 msgid "least_packages"
-msgstr "наименьшее количество_пакетов"
+msgstr "least_packages"
 
 #. module: stock
 #: model:product.removal,method:stock.removal_lifo

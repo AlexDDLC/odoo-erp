@@ -8,7 +8,7 @@
 # Martin Trigaux, 2024
 # Wil Odoo, 2024
 # Pedro M. Baeza <pedro.baeza@tecnativa.com>, 2024
-# Larissa Manderfeld, 2024
+# Larissa Manderfeld, 2025
 # 
 msgid ""
 msgstr ""
@@ -16,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-26 12:42+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Larissa Manderfeld, 2024\n"
+"Last-Translator: Larissa Manderfeld, 2025\n"
 "Language-Team: Spanish (https://app.transifex.com/odoo/teams/41243/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2963,6 +2963,15 @@ msgstr ""
 "- Lista regional de estados\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_tr_nilvera
+msgid ""
+"\n"
+"Base module containing core functionalities required by other Nilvera modules.\n"
+msgstr ""
+"\n"
+"Módulo base que incluye las funciones básicas requeridas por otros módulos de Nilvera.\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_bo_reports
 msgid ""
 "\n"
@@ -4955,6 +4964,15 @@ msgid ""
 msgstr ""
 "\n"
 "Filtra las líneas de stock que están en el widget de conciliación\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_tr_nilvera_einvoice
+msgid ""
+"\n"
+"For sending and receiving electronic invoices to Nilvera.\n"
+msgstr ""
+"\n"
+"Para enviar y recibir facturas electrónicas al sistema Nilvera.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_fr_hr_payroll
@@ -9144,6 +9162,17 @@ msgid ""
 " - Fiscal Positions\n"
 " - States\n"
 msgstr ""
+"\n"
+"Éste es el módulo base para gestionar el plan contable de Baréin en Odoo.\n"
+"===========================================================================\n"
+"Plan contable y localización bases de Baréin.\n"
+"\n"
+"Activa:\n"
+" - Plan contable\n"
+" - Impuestos\n"
+" - Informes de impuestos\n"
+" - Posiciones fiscales\n"
+" - Estados\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be
@@ -12428,7 +12457,7 @@ msgstr "3. %y, %Y         ==&gt; 08, 2008"
 #. module: base
 #: model:ir.module.module,summary:base.module_hr_appraisal_survey
 msgid "360 Feedback"
-msgstr "Retroalimentación de 360°"
+msgstr "Retroalimentación de 360 grados"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_external_tax
@@ -15370,7 +15399,7 @@ msgstr "Evaluación Contrato"
 #: model:ir.module.category,name:base.module_category_human_resources_appraisals
 #: model:ir.module.module,shortdesc:base.module_hr_appraisal
 msgid "Appraisals"
-msgstr "Evaluaciones"
+msgstr "Evaluación"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_documents_approvals
@@ -16005,7 +16034,7 @@ msgstr "Bahamas"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_bh
 msgid "Bahrain - Accounting"
-msgstr ""
+msgstr "Baréin - Contabilidad"
 
 #. module: base
 #: model:res.country,name:base.bh
@@ -38364,6 +38393,16 @@ msgid "Türkiye - Accounting Reports"
 msgstr "Turquía - Reportes contables"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_tr_nilvera
+msgid "Türkiye - Nilvera"
+msgstr "Türkiye - Nilvera"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_tr_nilvera_einvoice
+msgid "Türkiye - Nilvera E-Invoice"
+msgstr "Türkiye - Nilvera - Factura electrónica"
+
+#. module: base
 #: model:res.country,name:base.tm
 msgid "Turkmenistan"
 msgstr "Turkmenistán"
@@ -41254,13 +41293,6 @@ msgstr "l10n_be_pos_sale"
 #: model:ir.model.fields.selection,name:base.selection__ir_model_fields__ttype__many2many
 msgid "many2many"
 msgstr "many2many"
-
-#. module: base
-#. odoo-python
-#: code:addons/base/models/ir_actions.py:0
-#, python-format
-msgid "many2many fields cannot be evaluated by reference"
-msgstr "Los campos many2many no pueden ser evaluados por referencia"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_model_fields__ttype__many2one

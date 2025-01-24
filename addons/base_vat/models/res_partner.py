@@ -57,6 +57,7 @@ _ref_vat = {
     'lt': 'LT123456715',
     'lu': 'LU12345613',
     'lv': 'LV41234567891',
+    'ma': '12345678',
     'mc': 'FR53000004605',
     'mt': 'MT12345634',
     'mx': _('MXGODE561231GR8 or GODE561231GR8'),
@@ -763,10 +764,16 @@ class ResPartner(models.Model):
         introduced in January 2024."""
         vat = clean(vat, ' -.').strip()
 
-        if len(vat) not in (15, 16) or not vat[0:15].isdecimal() or not vat[-1].isdecimal():
+        if len(vat) not in (15, 16) or not vat.isdecimal():
             return False
 
-        # VAT is only digits and of the right length, check the Luhn checksum.
+        # VAT could be 15 (old numbers) or 16 digits. If there are 15 digits long, the 10th digit is a luhn checksum
+        # In some cases, the 15 digits can be transformed in a 16-digit by adding a 0 in front. In such case, we
+        # we can verify the luhn checksum like for the 15 digits by removing the 0. 
+        # However, for newly created VAT 16-digits VAT number, there is no checksum.
+        if (len(vat) == 16 and vat[0] != '0'):
+            return True
+
         try:
             luhn.validate(vat[0:9] if len(vat) == 15 else vat[1:10])
         except (InvalidFormat, InvalidChecksum):
@@ -782,6 +789,9 @@ class ResPartner(models.Model):
     def check_vat_il(self, vat):
         check_func = stdnum.util.get_cc_module('il', 'idnr').is_valid
         return check_func(vat)
+
+    def check_vat_ma(self, vat):
+        return vat.isdigit() and len(vat) == 8
 
     def format_vat_sm(self, vat):
         stdnum_vat_format = stdnum.util.get_cc_module('sm', 'vat').compact
