@@ -54,4 +54,5 @@ package.json
 
 # custom addons
 custom_addons/
-enterprice_addons/
+enterprise_addons/
+extra_addons
