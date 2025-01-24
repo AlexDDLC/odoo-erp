@@ -3149,6 +3149,9 @@ export class OdooEditor extends EventTarget {
         this.toolbar.classList.toggle('d-none', false);
         this.toolbar.style.maxWidth = window.innerWidth - OFFSET * 2 + 'px';
         const sel = this.document.getSelection();
+        if (!sel.rangeCount) {
+            return;
+        }
         const range = sel.getRangeAt(0);
         const isSelForward =
             sel.anchorNode === range.startContainer && sel.anchorOffset === range.startOffset;
@@ -4464,6 +4467,16 @@ export class OdooEditor extends EventTarget {
 
         // Ignore any changes that might have happened before this point.
         this.observer.takeRecords();
+
+        // Reset selection when editable is empty.
+        const selection = this.document.getSelection();
+        if (!selection.isCollapsed) {
+            const range = selection.getRangeAt(0);
+            const rangeContentChildNodes = range.cloneContents().childNodes;
+            if (rangeContentChildNodes.length === 1 && rangeContentChildNodes[0].nodeName === 'BR') {
+                setSelection(selection.anchorNode, 0, selection.anchorNode, 0);
+            }
+        }
 
         const node = ev.target;
         // handle checkbox lists

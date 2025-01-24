@@ -10,9 +10,9 @@
 # JanisJanis <jbojars@gmail.com>, 2022
 # Arnis Putniņš <arnis@allegro.lv>, 2023
 # Martin Trigaux, 2023
-# Will Sensors, 2024
 # ievaputnina <ievai.putninai@gmail.com>, 2024
-# Armīns Jeltajevs <armins.jeltajevs@gmail.com>, 2024
+# Will Sensors, 2025
+# Armīns Jeltajevs <armins.jeltajevs@gmail.com>, 2025
 # 
 msgid ""
 msgstr ""
@@ -20,7 +20,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-06 13:31+0000\n"
 "PO-Revision-Date: 2022-09-22 05:56+0000\n"
-"Last-Translator: Armīns Jeltajevs <armins.jeltajevs@gmail.com>, 2024\n"
+"Last-Translator: Armīns Jeltajevs <armins.jeltajevs@gmail.com>, 2025\n"
 "Language-Team: Latvian (https://app.transifex.com/odoo/teams/41243/lv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -202,7 +202,7 @@ msgstr "'%s' nav pareizs datumlaiks"
 #: model_terms:ir.ui.view,arch_db:website.list_website_public_pages
 #, python-format
 msgid "'. Showing results for '"
-msgstr ""
+msgstr "'. Rāda rezultātus par"
 
 #. module: website
 #. odoo-javascript
@@ -776,7 +776,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_pages_kanban_view
 msgid "<i class=\"fa fa-globe me-1\" title=\"Website\"/>"
-msgstr ""
+msgstr "<i class=\"fa fa-globe me-1\" title=\"Website\"/>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.page_404
@@ -1895,7 +1895,7 @@ msgstr ""
 #. module: website
 #: model:ir.model.fields.selection,name:website.selection__theme_ir_asset__directive__append
 msgid "Append"
-msgstr ""
+msgstr "Pievienot"
 
 #. module: website
 #: model:ir.actions.act_window,name:website.action_website_add_features
@@ -2196,7 +2196,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_images_subtitles
 #: model_terms:ir.ui.view,arch_db:website.template_footer_links
 msgid "Blog"
-msgstr ""
+msgstr "Blogs"
 
 #. module: website
 #. odoo-javascript
@@ -2266,7 +2266,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website.s_chart_options
 #: model_terms:ir.ui.view,arch_db:website.s_popup_options
 msgid "Bottom"
-msgstr ""
+msgstr "Apakšā"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options_background_options
@@ -2288,7 +2288,7 @@ msgstr "Boxed"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_countdown_options
 msgid "Boxes"
-msgstr ""
+msgstr "Kastes"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
@@ -2390,7 +2390,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:website.field_website_published_multi_mixin__can_publish
 #: model:ir.model.fields,field_description:website.field_website_snippet_filter__can_publish
 msgid "Can Publish"
-msgstr ""
+msgstr "Var publicēt"
 
 #. module: website
 #. odoo-javascript
@@ -2454,7 +2454,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Cards"
-msgstr ""
+msgstr "Kartes"
 
 #. module: website
 #: model:website.configurator.feature,name:website.feature_module_career
@@ -2464,7 +2464,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
 msgid "Carousel"
-msgstr ""
+msgstr "Karuselis"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.template_footer_links
@@ -2562,7 +2562,7 @@ msgstr ""
 #: code:addons/website/static/src/js/editor/snippets.editor.js:0
 #, python-format
 msgid "Check your connection and try again"
-msgstr ""
+msgstr "Pārbaudiet Jūsu savienojumu un mēģiniet vēlreiz"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
@@ -4052,7 +4052,7 @@ msgstr "Email support"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
 msgid "Embed Code"
-msgstr ""
+msgstr "Iekļautais kods"
 
 #. module: website
 #. odoo-python
@@ -4350,7 +4350,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Fill"
-msgstr ""
+msgstr "Aizpildīt"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_tabs_options
@@ -4397,7 +4397,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:website.field_website_visitor__create_date
 #: model_terms:ir.ui.view,arch_db:website.website_visitor_view_search
 msgid "First Connection"
-msgstr ""
+msgstr "Pirmais savienojums"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_features
@@ -4628,7 +4628,7 @@ msgstr "Full Screen"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_tabs_options
 msgid "Full Width"
-msgstr ""
+msgstr "Pilns platums"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -5606,7 +5606,7 @@ msgstr "Install Language"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
 msgid "Install languages"
-msgstr ""
+msgstr "Uzstādīt valodas"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.show_website_info
@@ -5700,7 +5700,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:website.field_website_published_multi_mixin__is_published
 #: model:ir.model.fields,field_description:website.field_website_snippet_filter__is_published
 msgid "Is Published"
-msgstr ""
+msgstr "Ir publicēts"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_menu__is_visible
@@ -5924,7 +5924,7 @@ msgstr "Valodas"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
 msgid "Languages available on your website"
-msgstr ""
+msgstr "Jūsu mājas lapā pieejamās valodas"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
@@ -5956,7 +5956,7 @@ msgstr "Pēdēja darbība"
 #: model:ir.model.fields,field_description:website.field_website_visitor__last_connection_datetime
 #: model_terms:ir.ui.view,arch_db:website.website_visitor_view_search
 msgid "Last Connection"
-msgstr ""
+msgstr "Pēdējais savienojums"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_showcase
@@ -6046,7 +6046,7 @@ msgstr ""
 #: code:addons/website/static/src/xml/website.backend.xml:0
 #, python-format
 msgid "Last Week"
-msgstr ""
+msgstr "Pagājusī nedēļa"
 
 #. module: website
 #. odoo-javascript
@@ -6131,7 +6131,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_chart_options
 msgid "Legend"
-msgstr ""
+msgstr "Leģenda"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_process_steps
@@ -6744,7 +6744,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_product_list
 msgid "Multimedia"
-msgstr ""
+msgstr "Multimediji"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
@@ -6797,7 +6797,7 @@ msgstr "Nosaukums"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.searchbar_input_snippet_options
 msgid "Name (A-Z)"
-msgstr ""
+msgstr "Nosaukums (A-Z)"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.view_view_qweb
@@ -6957,7 +6957,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website.list_website_public_pages
 #, python-format
 msgid "No results found for '"
-msgstr ""
+msgstr "Nav atrasts neviens rezultāts"
 
 #. module: website
 #. odoo-javascript
@@ -6998,7 +6998,7 @@ msgstr "Standarta"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_pages_kanban_view
 msgid "Not Published"
-msgstr ""
+msgstr "Nav publicēts"
 
 #. module: website
 #: model_terms:digest.tip,tip_description:website.digest_tip_website_3
@@ -7045,7 +7045,7 @@ msgstr "Numurs"
 #: model:ir.model.fields,field_description:website.field_res_config_settings__website_language_count
 #: model:ir.model.fields,field_description:website.field_website__language_count
 msgid "Number of languages"
-msgstr ""
+msgstr "Valodu skaits"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
@@ -7413,7 +7413,7 @@ msgstr ""
 #: model:ir.ui.menu,name:website.menu_visitor_view_menu
 #: model_terms:ir.ui.view,arch_db:website.website_visitor_view_form
 msgid "Page Views"
-msgstr ""
+msgstr "Lapas skatījumi"
 
 #. module: website
 #: model:ir.actions.act_window,name:website.website_visitor_page_action
@@ -7573,12 +7573,12 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Pills"
-msgstr ""
+msgstr "Tabletes"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
 msgid "Placeholder"
-msgstr ""
+msgstr "Vietturis"
 
 #. module: website
 #. odoo-javascript
@@ -7864,7 +7864,7 @@ msgstr "Public User"
 #: model_terms:ir.ui.view,arch_db:website.website_page_properties_view_form
 #, python-format
 msgid "Publish"
-msgstr ""
+msgstr "Publicēt"
 
 #. module: website
 #. odoo-javascript
@@ -7957,12 +7957,12 @@ msgstr "Radio pogas"
 #: model_terms:ir.ui.view,arch_db:website.snippets
 #, python-format
 msgid "Rating"
-msgstr ""
+msgstr "Vērtējums"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_image_gallery_options
 msgid "Re-order"
-msgstr ""
+msgstr "Atkārtots pasūtījums"
 
 #. module: website
 #. odoo-javascript
@@ -8018,7 +8018,7 @@ msgstr ""
 #. module: website
 #: model:ir.ui.menu,name:website.menu_website_rewrite
 msgid "Redirects"
-msgstr ""
+msgstr "Novirzīšanas"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
@@ -8100,7 +8100,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_image_gallery_options
 msgid "Remove all"
-msgstr ""
+msgstr "Noņemt visus"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.theme_view_kanban
@@ -8157,7 +8157,7 @@ msgstr "Atjaunot iepriekšējo versiju (soft reset)."
 #: model:ir.model.fields,help:website.field_website_published_multi_mixin__website_id
 #: model:ir.model.fields,help:website.field_website_snippet_filter__website_id
 msgid "Restrict publishing to this website."
-msgstr ""
+msgstr "Ierobežot publicēšanu šajā tīmekļa vietnē."
 
 #. module: website
 #: model:res.groups,name:website.group_website_restricted_editor
@@ -8274,7 +8274,7 @@ msgstr "SEO metadata"
 #: model:ir.model.fields,field_description:website.field_website_page__is_seo_optimized
 #: model:ir.model.fields,field_description:website.field_website_seo_metadata__is_seo_optimized
 msgid "SEO optimized"
-msgstr ""
+msgstr "SEO optimizēts"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -8540,7 +8540,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:website.field_website_page__seo_name
 #: model:ir.model.fields,field_description:website.field_website_seo_metadata__seo_name
 msgid "Seo name"
-msgstr ""
+msgstr "Seo nosaukums"
 
 #. module: website
 #. odoo-javascript
@@ -8786,7 +8786,7 @@ msgstr ""
 #: model:ir.ui.menu,name:website.menu_site
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
 msgid "Site"
-msgstr ""
+msgstr "Vietne"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
@@ -9696,7 +9696,7 @@ msgstr ""
 #: model:ir.ui.menu,name:website.menu_current_page
 #: model_terms:ir.ui.view,arch_db:website.s_popup_options
 msgid "This page"
-msgstr ""
+msgstr "Šī lapa"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.page_404
@@ -9729,6 +9729,7 @@ msgstr ""
 #. module: website
 #. odoo-javascript
 #: code:addons/website/static/src/systray_items/website_switcher.xml:0
+#: code:addons/website/static/src/systray_items/website_switcher.js:0
 #, python-format
 msgid "This website does not have a domain configured."
 msgstr ""
@@ -9876,7 +9877,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Top"
-msgstr ""
+msgstr "Augšā"
 
 #. module: website
 #. odoo-python
@@ -10117,7 +10118,7 @@ msgstr "Nepublicēts"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_visitor_view_search
 msgid "Unregistered"
-msgstr ""
+msgstr "Nereģistrēts"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.theme_view_kanban
@@ -10431,7 +10432,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:website.field_website_published_multi_mixin__website_published
 #: model:ir.model.fields,field_description:website.field_website_snippet_filter__website_published
 msgid "Visible on current website"
-msgstr ""
+msgstr "Redzams pašreizējā tīmekļa vietnē"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
@@ -10455,7 +10456,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:website.field_website_visitor__page_ids
 #: model_terms:ir.ui.view,arch_db:website.website_visitor_view_kanban
 msgid "Visited Pages"
-msgstr ""
+msgstr "Apmeklētās lapas"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_visitor__website_track_ids
@@ -10496,7 +10497,7 @@ msgstr ""
 #: model:ir.ui.menu,name:website.website_visitor_menu
 #: model_terms:ir.ui.view,arch_db:website.website_visitor_view_graph
 msgid "Visitors"
-msgstr ""
+msgstr "Apmeklētāji"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_visitor_view_form
@@ -10798,7 +10799,7 @@ msgstr "Website Settings"
 #. module: website
 #: model:ir.model,name:website.model_website_snippet_filter
 msgid "Website Snippet Filter"
-msgstr ""
+msgstr "Tīmekļa vietnes fragmentu filtrs"
 
 #. module: website
 #: model:ir.model,name:website.model_theme_website_menu
@@ -10830,7 +10831,7 @@ msgstr "Website Url"
 #: model:ir.model,name:website.model_website_visitor
 #: model_terms:ir.ui.view,arch_db:website.website_visitor_view_form
 msgid "Website Visitor"
-msgstr ""
+msgstr "Tīmekļa vietnes apmeklētājs"
 
 #. module: website
 #. odoo-python
@@ -10884,7 +10885,7 @@ msgstr "Website meta title"
 #: model:ir.model.fields,field_description:website.field_website_page__website_meta_og_img
 #: model:ir.model.fields,field_description:website.field_website_seo_metadata__website_meta_og_img
 msgid "Website opengraph image"
-msgstr ""
+msgstr "Tīmekļa vietne opengraph attēls"
 
 #. module: website
 #: model:ir.model,name:website.model_website_rewrite
@@ -11400,7 +11401,7 @@ msgstr "kolonnas, apraksts"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
 msgid "common answers, common questions"
-msgstr ""
+msgstr "biežas atbildes, bieži jautājumi"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets

@@ -369,7 +369,7 @@ class AccountEdiFormat(models.Model):
             invoice_lines.append({
                 'line': line,
                 'discount': discount * refund_sign,
-                'unit_price': (line.balance + discount) / line.quantity * refund_sign,
+                'unit_price': (line.balance + discount) / line.quantity * refund_sign if line.quantity else 0.0,
                 'total': total,
                 'description': regex_sub(r'[^0-9a-zA-Z ]', '', line.name or '')[:250]
             })
@@ -389,13 +389,13 @@ class AccountEdiFormat(models.Model):
 
         if is_oss:
             values['regime_key'] = ['17']
+        elif invoice._is_l10n_es_tbai_simplified():
+            values['regime_key'] = ['52']  # code for simplified invoices
         elif not com_partner.country_id or com_partner.country_id.code in self.env.ref('base.europe').country_ids.mapped('code'):
             values['regime_key'] = ['01']
         else:
             values['regime_key'] = ['02']
 
-        if invoice._is_l10n_es_tbai_simplified():
-            values['regime_key'].append(52)  # code for simplified invoices
         values['nosujeto_causa'] = 'IE' if is_oss else 'RL'
 
         return values
