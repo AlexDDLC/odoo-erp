@@ -92,4 +92,9 @@ pydevd-odoo
 debugpy
 watchdog
 pycountry
+<<<<<<< HEAD
 simplejson
+=======
+simplejson
+Wkhtmltopdf
+>>>>>>> fce9f2d1ffc8c58caf8c45d88f627a8b2f54ceea
