@@ -93,5 +93,4 @@ debugpy
 watchdog
 pycountry
 simplejson
-simplejson
 Wkhtmltopdf
